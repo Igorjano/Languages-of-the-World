@@ -11,10 +11,19 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import configparser
+import os
+
+config = configparser.ConfigParser()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+SETTINGS_DIR = Path(__file__).resolve().parent
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
+config.read(os.path.join(BASE_DIR, 'project_properties'))
+postgres_config = config['postgres_conn']
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -37,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'el_mundo'
 ]
 
 MIDDLEWARE = [
@@ -76,8 +86,12 @@ WSGI_APPLICATION = 'beetroot_graduate_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': postgres_config['name'],
+        'USER': postgres_config['user'],
+        'PASSWORD': postgres_config['password'],
+        'HOST': postgres_config['host'],
+        'PORT': postgres_config['port'],
     }
 }
 
@@ -117,6 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(TEMPLATE_DIR, '../static/styles')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

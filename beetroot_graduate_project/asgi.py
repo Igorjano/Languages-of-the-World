@@ -1,5 +1,5 @@
 """
-ASGI config for beetroot_graduate_project project.
+ASGI project_properties for beetroot_graduate_project project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

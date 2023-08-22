@@ -1,5 +1,5 @@
 """
-WSGI config for beetroot_graduate_project project.
+WSGI project_properties for beetroot_graduate_project project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
