@@ -22,7 +22,7 @@ class Countries(models.Model):
     currency = models.ForeignKey(Currency, null=True, on_delete=models.SET_NULL)
 
 
-class LanguageCountry(models.Model):
+class LanguagesByCountries(models.Model):
     country = models.ForeignKey(Countries, null=True, on_delete=models.SET_NULL)
     language = models.ForeignKey(Languages, null=True, on_delete=models.SET_NULL)
 

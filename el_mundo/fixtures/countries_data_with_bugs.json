@@ -185,6 +185,30 @@
         ]
     },
     {
+        "name": "Antarctica",
+        "description": "Antarctica is Earth's southernmost and least-populated continent. Situated almost entirely south of the Antarctic Circle and surrounded by the Southern Ocean, it contains the geographic South Pole. Antarctica is the fifth-largest continent, being about 40% larger than Europe, and has an area of 14,200,000\u00a0km2 (5,500,000\u00a0sq\u00a0mi). Most of Antarctica is covered by the Antarctic ice sheet, with an average thickness of 1.9\u00a0km (1.2\u00a0mi).",
+        "capital": "NULL",
+        "continent": [
+            "Antarctica"
+        ],
+        "flag": "https://flagcdn.com/w320/aq.png",
+        "population": 1000,
+        "languages": "NULL",
+        "currencies": "NULL",
+        "lat": -90.0,
+        "long": 0.0,
+        "timezones": [
+            "UTC-03:00",
+            "UTC+03:00",
+            "UTC+05:00",
+            "UTC+06:00",
+            "UTC+07:00",
+            "UTC+08:00",
+            "UTC+10:00",
+            "UTC+12:00"
+        ]
+    },
+    {
         "name": "Antigua and Barbuda",
         "description": "Antigua and Barbuda is a sovereign island country in the West Indies. It lies at the conjuncture of the Caribbean Sea and the Atlantic Ocean in the Leeward Islands part of the Lesser Antilles.",
         "capital": [
@@ -335,7 +359,7 @@
         "flag": "https://flagcdn.com/w320/at.png",
         "population": 8917205,
         "languages": {
-            "deu": "German"
+            "de": "German"
         },
         "currencies": {
             "EUR": {
@@ -621,7 +645,7 @@
     },
     {
         "name": "Bhutan",
-        "description": "Bhutan, officially the Kingdom of Bhutan, is a landlocked Southern Asian country, which is situated in the Eastern Himalayas, between China in the north and India in the south. A mountainous country, Bhutan is known locally as \"Druk Yul\" or \"Land of the Thunder Dragon\", a name reflecting the cultural heritage of the country. The exonym Bhutan likely derives from the Prakrit hybrid word Bh\u014f\u1e6d\u1e6da\u1e43ta, a name referring to its geographical proximity to Tibet. Nepal and Bangladesh are located near Bhutan but do not share a border with it. The country has a population of over 727,145 and territory of 38,394 square kilometres (14,824\u00a0sq\u00a0mi) and ranks 133rd in terms of land area and 160th in population. Bhutan is a constitutional monarchy with a king as the head of state and a prime minister as the head of government. Vajrayana Buddhism is the state religion and the Je Khenpo is the head of state religion.",
+        "description": "Bhutan, officially the Kingdom of Bhutan, is a landlocked South Asian country, which is situated in the Eastern Himalayas, between China in the north and India in the south. A mountainous country, Bhutan is known locally as \"Druk Yul\" or \"Land of the Thunder Dragon\", a name reflecting the cultural heritage of the country. The exonym Bhutan likely derives from the Prakrit hybrid word Bh\u014f\u1e6d\u1e6da\u1e43ta, a name referring to its geographical proximity to Tibet. Nepal and Bangladesh are located near Bhutan but do not share a border with it. The country has a population of over 727,145 and territory of 38,394 square kilometres (14,824\u00a0sq\u00a0mi) and ranks 133rd in terms of land area and 160th in population. Bhutan is a constitutional monarchy with a king as the head of state and a prime minister as the head of government. Vajrayana Buddhism is the state religion and the Je Khenpo is the head of state religion.",
         "capital": [
             "Thimphu"
         ],
@@ -730,6 +754,25 @@
         "long": 24.0,
         "timezones": [
             "UTC+02:00"
+        ]
+    },
+    {
+        "name": "Bouvet Island",
+        "description": "Bouvet Island is an island and dependency of Norway, and declared an uninhabited protected nature reserve. It is a subantarctic volcanic island, situated in the South Atlantic Ocean at the southern end of the Mid-Atlantic Ridge, making it the world's most remote island. It is not part of the southern region covered by the Antarctic Treaty System.",
+        "capital": "NULL",
+        "continent": [
+            "Antarctica"
+        ],
+        "flag": "https://flagcdn.com/w320/bv.png",
+        "population": 0,
+        "languages": {
+            "nor": "Norwegian"
+        },
+        "currencies": "NULL",
+        "lat": 54.4208,
+        "long": 3.3464,
+        "timezones": [
+            "UTC+01:00"
         ]
     },
     {
@@ -1447,7 +1490,7 @@
     },
     {
         "name": "Cyprus",
-        "description": "Cyprus, officially the Republic of Cyprus, is an island country located in the eastern Mediterranean Sea. It is geographically in West Asia, but culturally and geopolitically Southeast European. Cyprus is the third-largest and third-most populous island in the Mediterranean. It is located north of Egypt, east of Greece, south of Turkey, and west of Lebanon and Syria. Its capital and largest city is Nicosia. The northeast portion of the island is governed by the Turkish Republic of Northern Cyprus, a de facto state recognised only by Turkey.",
+        "description": "Cyprus, officially the Republic of Cyprus, is an island country located in the eastern Mediterranean Sea. It is geographically in West Asia, but culturally and geopolitically Southeast European. Cyprus is the third-largest and third-most populous island in the Mediterranean. It is located north of Egypt, east of Greece, south of Turkey, and west of Lebanon and Syria. Its capital and largest city is Nicosia.",
         "capital": [
             "Nicosia"
         ],
@@ -2168,7 +2211,7 @@
     },
     {
         "name": "Germany",
-        "description": "Germany, officially the Federal Republic of Germany, is a country in Central Europe. It is the second-most populous country in Europe after Russia, and the most populous member state of the European Union. Germany is situated between the Baltic and North seas to the north, and the Alps to the south. Its 16 constituent states are bordered by Denmark to the north, Poland and the Czech Republic to the east, Austria and Switzerland to the south, and France, Luxembourg, Belgium, and the Netherlands to the west. The nation's capital and most populous city is Berlin and its main financial centre is Frankfurt; the largest urban area is the Ruhr.",
+        "description": "Germany, officially the Federal Republic of Germany, is a country in the western region of Central Europe. It is the second-most populous country in Europe after Russia, and the most populous member state of the European Union. Germany is situated between the Baltic and North seas to the north, and the Alps to the south. Its 16 constituent states are bordered by Denmark to the north, Poland and the Czech Republic to the east, Austria and Switzerland to the south, and France, Luxembourg, Belgium, and the Netherlands to the west. The nation's capital and most populous city is Berlin and its main financial centre is Frankfurt; the largest urban area is the Ruhr.",
         "capital": [
             "Berlin"
         ],
@@ -2194,7 +2237,7 @@
     },
     {
         "name": "Ghana",
-        "description": "Ghana, officially the Republic of Ghana, is a country in West Africa. It abuts the Gulf of Guinea and the Atlantic Ocean to the south, sharing borders with Ivory Coast in the west, Burkina Faso in the north, and Togo in the east. Ghana covers an area of 238,535\u00a0km2 (92,099\u00a0sq\u00a0mi), spanning diverse biomes that range from coastal savannas to tropical rainforests. With over 32 million inhabitants, Ghana is the second-most populous country in West Africa, after Nigeria. The capital and largest city is Accra; other major cities are Kumasi, Tamale, and Sekondi-Takoradi.",
+        "description": "Ghana, officially the Republic of Ghana, is a country in West Africa. It abuts the Gulf of Guinea and the Atlantic Ocean to the south, sharing borders with Ivory Coast in the west, Burkina Faso in the north, and Togo in the east. Ghana covers an area of 239,535\u00a0km2 (92,485\u00a0sq\u00a0mi), spanning diverse biomes that range from coastal savannas to tropical rainforests. With over 32 million inhabitants, Ghana is the second-most populous country in West Africa, after Nigeria. The capital and largest city is Accra; other major cities are Kumasi, Tamale, and Sekondi-Takoradi.",
         "capital": [
             "Accra"
         ],
@@ -2286,7 +2329,7 @@
         },
         "currencies": {
             "DKK": {
-                "name": "Danish krone",
+                "name": "krone",
                 "symbol": "kr."
             }
         },
@@ -2544,6 +2587,25 @@
         ]
     },
     {
+        "name": "Heard Island and McDonald Islands",
+        "description": "The Territory of Heard Island and McDonald Islands (HIMI) is an Australian external territory comprising a volcanic group of mostly barren Antarctic islands, about two-thirds of the way from Madagascar to Antarctica. The group's overall area is 372\u00a0km2 (144\u00a0sq\u00a0mi) and it has 101.9\u00a0km (63\u00a0mi) of coastline. Discovered in the mid-19th century, the islands lie on the Kerguelen Plateau in the Indian Ocean and have been an Australian territory since 1947. They contain Australia's only two active volcanoes. The summit of one, Mawson Peak, is higher than any mountain in all other Australian states or territories, except Dome Argus, Mount McClintock and Mount Menzies in the Australian Antarctic Territory.",
+        "capital": "NULL",
+        "continent": [
+            "Antarctica"
+        ],
+        "flag": "https://flagcdn.com/w320/hm.png",
+        "population": 0,
+        "languages": {
+            "eng": "English"
+        },
+        "currencies": "NULL",
+        "lat": 53.0818,
+        "long": 73.5042,
+        "timezones": [
+            "UTC+05:00"
+        ]
+    },
+    {
         "name": "Honduras",
         "description": "Honduras, officially the Republic of Honduras, is a country in Central America. The republic of Honduras is bordered to the west by Guatemala, to the southwest by El Salvador, to the southeast by Nicaragua, to the south by the Pacific Ocean at the Gulf of Fonseca, and to the north by the Gulf of Honduras, a large inlet of the Caribbean Sea. Its capital and largest city is Tegucigalpa.",
         "capital": [
@@ -2598,7 +2660,7 @@
     },
     {
         "name": "Hungary",
-        "description": "Hungary is a landlocked country in East-Central Europe. Spanning 93,030 square kilometres (35,920\u00a0sq\u00a0mi) of the Carpathian Basin, Hungary is bordered by Slovakia to the north, Ukraine to the northeast, Romania to the east and southeast, Serbia to the south, Croatia and Slovenia to the southwest, and Austria to the west. It has a population of 9.7 million, mostly ethnic Hungarians and a significant Romani minority. Hungarian, the official language, is the world's most widely spoken Uralic language and among the few non-Indo-European languages widely spoken in Europe. Budapest is the country's capital and largest city; other major urban areas include Debrecen, Szeged, Miskolc, P\u00e9cs, and Gy\u0151r.",
+        "description": "Hungary is a landlocked country in Central Europe, at the crossroads between Eastern, Central and Southeastern Europe. Spanning 93,030 square kilometres (35,920\u00a0sq\u00a0mi) of the Carpathian Basin, it is bordered by Slovakia to the north, Ukraine to the northeast, Romania to the east and southeast, Serbia to the south, Croatia and Slovenia to the southwest, and Austria to the west. Hungary has a population of 9.7 million, mostly ethnic Hungarians and a significant Romani minority. Hungarian, the official language, is the world's most widely spoken Uralic language and among the few non-Indo-European languages widely spoken in Europe. Budapest is the country's capital and largest city; other major urban areas include Debrecen, Szeged, Miskolc, P\u00e9cs, and Gy\u0151r.",
         "capital": [
             "Budapest"
         ],
@@ -2678,7 +2740,7 @@
     },
     {
         "name": "Indonesia",
-        "description": "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea. Indonesia is the world's largest archipelagic state and the 14th-largest country by area, at 1,904,569 square kilometres. With around 280 million people, Indonesia is the world's fourth-most populous country and the most populous Muslim-majority country. Java, the world's most populous island, is home to more than half of the country's population.",
+        "description": "Indonesia, officially the Republic of Indonesia, is an island nation in Southeast Asia and Oceania between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea. Indonesia is the world's largest archipelagic state and the 14th-largest country by area, at 1,904,569 square kilometres. With around 280 million people, Indonesia is the world's fourth-most populous country and the most populous Muslim-majority country. Java, the world's most populous island, is home to more than half of the country's population.",
         "capital": [
             "Jakarta"
         ],
@@ -3063,7 +3125,7 @@
     },
     {
         "name": "Kiribati",
-        "description": "Kiribati, officially the Republic of Kiribati, is an island country in Micronesia subregion of Oceania in the central Pacific Ocean. Its permanent population is over 119,000 as of 2020 census, with more than half living on Tarawa atoll. The state comprises 32 atolls and one remote raised coral island, Banaba. Its total land area is 811\u00a0km2 (313\u00a0sq\u00a0mi) dispersed over 3,441,810\u00a0km2 (1,328,890\u00a0sq\u00a0mi) of ocean.",
+        "description": "Kiribati, officially the Republic of Kiribati, is an island country in the Micronesia subregion of Oceania in the central Pacific Ocean. Its permanent population is over 119,000 as of the 2020 census, with more than half living on Tarawa atoll. The state comprises 32 atolls and one remote raised coral island, Banaba. Its total land area is 811\u00a0km2 (313\u00a0sq\u00a0mi) dispersed over 3,441,810\u00a0km2 (1,328,890\u00a0sq\u00a0mi) of ocean.",
         "capital": [
             "South Tarawa"
         ],
@@ -3736,7 +3798,7 @@
     },
     {
         "name": "Mexico",
-        "description": "Mexico, officially the United Mexican States, is a country in the southern portion of North America. It is bordered to the north by the United States; to the south and west by the Pacific Ocean; to the southeast by Guatemala, Belize, and the Caribbean Sea; and to the east by the Gulf of Mexico. Mexico covers 1,972,550 km2, making it the world's 13th-largest country by area; with a population of over 126 million, it is the 10th-most-populous country and has the most Spanish speakers. Mexico is organized as a federal republic comprising 31 states and Mexico City, its capital.",
+        "description": "Mexico, officially the United Mexican States, is a country in the southern portion of North America. It is bordered to the north by the United States; to the south and west by the Pacific Ocean; to the southeast by Guatemala, Belize, and the Caribbean Sea; and to the east by the Gulf of Mexico. Mexico covers 1,972,550 km2, making it the world's 13th-largest country by area; with a population of almost 130 million, it is the 10th-most-populous country and has the most Spanish speakers. Mexico is organized as a federal republic comprising 31 states and Mexico City, its capital.",
         "capital": [
             "Mexico City"
         ],
@@ -3870,7 +3932,7 @@
     },
     {
         "name": "Montenegro",
-        "description": "\n\n",
+        "description": "\n\n\nMontenegro is a country in Southeastern Europe. It is bordered by Bosnia and Herzegovina to the northwest, Serbia to the northeast, Kosovo to the east, Albania to the southeast, and Croatia and the Adriatic Sea to the southwest with a coastline of 293.5\u00a0km. Podgorica is the country's capital and its largest city, it covers 10.4% of Montenegro's territory of 13,812 square kilometres (5,333\u00a0sq\u00a0mi), and is home to roughly 31% of its total population of 621,000. Cetinje is the former royal capital and cultural centre of Montenegro and is the location of several national institutions, including the official residence of the President of Montenegro.",
         "capital": [
             "Podgorica"
         ],
@@ -4255,7 +4317,7 @@
     },
     {
         "name": "Niue",
-        "description": "Niue is an island country in the South Pacific Ocean, 2,400 kilometres (1,500\u00a0mi) northeast of New Zealand. Niue's land area is about 261 square kilometres (101\u00a0sq\u00a0mi) and its population, predominantly Polynesian, was about 1,600 in 2016. Niue is located in a triangle between Tonga, Samoa, and the Cook Islands. It is 604 kilometres northeast of Tonga. The island is commonly referred to as \"The Rock\", which comes from the traditional name \"Rock of Polynesia\". Niue is one of the world's largest coral islands. The terrain of the island has two noticeable levels. The higher level is made up of a limestone cliff running along the coast, with a plateau in the centre of the island reaching approximately 60 metres above sea level. The lower level is a coastal terrace approximately 0.5\u00a0km wide and about 25\u201327 metres high, which slopes down and meets the sea in small cliffs. A coral reef surrounds the island, with the only major break in the reef being in the central western coast, close to the capital, Alofi.",
+        "description": "Niue is a self-governing territory of New Zealand in the South Pacific Ocean, 2,400 kilometres (1,500\u00a0mi) northeast of New Zealand. Niue's land area is about 261 square kilometres (101\u00a0sq\u00a0mi) and its population, predominantly Polynesian, was about 1,600 in 2016. Niue is located in a triangle between Tonga, Samoa, and the Cook Islands. It is 604 kilometres northeast of Tonga. The island is commonly referred to as \"The Rock\", which comes from the traditional name \"Rock of Polynesia\". Niue is one of the world's largest coral islands. The terrain of the island has two noticeable levels. The higher level is made up of a limestone cliff running along the coast, with a plateau in the centre of the island reaching approximately 60 metres above sea level. The lower level is a coastal terrace approximately 0.5\u00a0km wide and about 25\u201327 metres high, which slopes down and meets the sea in small cliffs. A coral reef surrounds the island, with the only major break in the reef being in the central western coast, close to the capital, Alofi.",
         "capital": [
             "Alofi"
         ],
@@ -4724,7 +4786,7 @@
     },
     {
         "name": "Portugal",
-        "description": "Portugal, officially the Portuguese Republic, is a country located on the Iberian Peninsula, in Southwestern Europe, and whose territory also includes the macaronesian archipelagos of the Azores, Madeira, and the Savage Islands. It features the westernmost point in continental Europe, and its Iberian portion is bordered to the west and south by the Atlantic Ocean and to the north and east by Spain, the sole country to have a land border with Portugal. Its archipelagos form two autonomous regions with their own regional governments. Lisbon is the capital and largest city by population.",
+        "description": "Portugal, officially the Portuguese Republic, is a country located on the Iberian Peninsula, in Southwestern Europe, and whose territory also includes the macaronesian archipelagos of the Azores, Madeira, and the Savage Islands. It features the westernmost point in continental Europe, and its Iberian portion is bordered to the west and south by the Atlantic Ocean and to the north and east by Spain, the sole country to have a land border with Portugal. Its archipelagos form two autonomous regions with their own regional governments. In the mainland, Alentejo region occupies the biggest area but is one of the regions in Europe with a lower population density. Lisbon is the capital and largest city by population, being also the main spot for tourists alongside Porto and Algarve.",
         "capital": [
             "Lisbon"
         ],
@@ -4832,7 +4894,7 @@
     },
     {
         "name": "Romania",
-        "description": "Romania is a country located at the crossroads of Central, Eastern, and Southeastern Europe. It borders Bulgaria to the south, Ukraine to the north, Hungary to the west, Serbia to the southwest, Moldova to the east, and the Black Sea to the southeast. It has a predominantly temperate-continental climate, and an area of 238,397\u00a0km2 (92,046\u00a0sq\u00a0mi), with a population of 19,892,812 inhabitants (2023) made by macrotrend and worldometer. Romania is the twelfth-largest country in Europe and the sixth-most populous member state of the European Union. Its capital and largest city is Bucharest, followed by Ia\u0219i, Cluj-Napoca, Timi\u0219oara, Constan\u021ba, Craiova, Bra\u0219ov, and Gala\u021bi.",
+        "description": "Romania is a country in Eastern and Southeastern Europe. It borders Bulgaria to the south, Ukraine to the north, Hungary to the west, Serbia to the southwest, Moldova to the east, and the Black Sea to the southeast. It has a predominantly temperate-continental climate, and an area of 238,397\u00a0km2 (92,046\u00a0sq\u00a0mi), with a population of 19,892,812 inhabitants (2023) made by macrotrend and worldometer. Romania is the twelfth-largest country in Europe and the sixth-most populous member state of the European Union. Its capital and largest city is Bucharest, followed by Ia\u0219i, Cluj-Napoca, Timi\u0219oara, Constan\u021ba, Craiova, Bra\u0219ov, and Gala\u021bi.",
         "capital": [
             "Bucharest"
         ],
@@ -4854,6 +4916,41 @@
         "long": 25.0,
         "timezones": [
             "UTC+02:00"
+        ]
+    },
+    {
+        "name": "Russia",
+        "description": "Russia, or the Russian Federation, is a country spanning Eastern Europe and Northern Asia. It is the largest country in the world by area, its vast landmass stretching over the easternmost part of Europe and the northernmost part of Asia. Russia extends across eleven time zones and shares land boundaries with fourteen countries. It is the world's ninth-most populous country and Europe's most populous country. The country's capital and largest city is Moscow. Saint Petersburg is Russia's cultural centre and second-largest city. Other major urban areas in the country include Novosibirsk, Yekaterinburg, Nizhny Novgorod, Chelyabinsk, Krasnoyarsk, and Kazan.",
+        "capital": [
+            "Moscow"
+        ],
+        "continent": [
+            "Europe",
+            "Asia"
+        ],
+        "flag": "https://flagcdn.com/w320/ru.png",
+        "population": 144104080,
+        "languages": {
+            "rus": "Russian"
+        },
+        "currencies": {
+            "RUB": {
+                "name": "Russian ruble",
+                "symbol": "\u20bd"
+            }
+        },
+        "lat": 60.0,
+        "long": 100.0,
+        "timezones": [
+            "UTC+03:00",
+            "UTC+04:00",
+            "UTC+06:00",
+            "UTC+07:00",
+            "UTC+08:00",
+            "UTC+09:00",
+            "UTC+10:00",
+            "UTC+11:00",
+            "UTC+12:00"
         ]
     },
     {
@@ -4952,7 +5049,7 @@
         },
         "currencies": {
             "GBP": {
-                "name": "British pound",
+                "name": "Pound sterling",
                 "symbol": "\u00a3"
             },
             "SHP": {
@@ -5681,7 +5778,7 @@
         },
         "currencies": {
             "NOK": {
-                "name": "Norwegian krone",
+                "name": "krone",
                 "symbol": "kr"
             }
         },
@@ -5800,7 +5897,7 @@
     },
     {
         "name": "Taiwan",
-        "description": "Taiwan, officially the Republic of China (ROC), is a country in East Asia. It is located at the junction of the East and South China Seas in the northwestern Pacific Ocean, with the People's Republic of China (PRC) to the northwest, Japan to the northeast, and the Philippines to the south. The territories controlled by the ROC consist of 168 islands with a combined area of 36,193 square kilometres. The main island of Taiwan, also known as Formosa, has an area of 35,808 square kilometres, with mountain ranges dominating the eastern two-thirds and plains in the western third, where its highly urbanized population is concentrated. The capital, Taipei, forms along with New Taipei City and Keelung, the largest metropolitan area in Taiwan. Other major cities include Taoyuan, Taichung, Tainan, and Kaohsiung. With around 23.9 million inhabitants, Taiwan is among the most densely populated countries in the world.",
+        "description": "Taiwan, officially the Republic of China (ROC), is an island country in East Asia. It is located at the junction of the East and South China Seas in the northwestern Pacific Ocean, with the People's Republic of China (PRC) to the northwest, Japan to the northeast, and the Philippines to the south. The territories controlled by the ROC consist of 168 islands with a combined area of 36,193 square kilometres. The main island of Taiwan, also known as Formosa, has an area of 35,808 square kilometres, with mountain ranges dominating the eastern two-thirds and plains in the western third, where its highly urbanized population is concentrated. The capital, Taipei, forms along with New Taipei City and Keelung, the largest metropolitan area in Taiwan. Other major cities include Taoyuan, Taichung, Tainan, and Kaohsiung. With around 23.9 million inhabitants, Taiwan is among the most densely populated countries in the world.",
         "capital": [
             "Taipei"
         ],
@@ -5853,7 +5950,7 @@
     },
     {
         "name": "Tanzania",
-        "description": "Tanzania, officially the United Republic of Tanzania, is a country in East Africa within the African Great Lakes region. It borders Uganda to the north; Kenya to the northeast; the Indian Ocean to the east; Mozambique and Malawi to the south; Zambia to the southwest; and Rwanda, Burundi, and the Democratic Republic of the Congo to the west. Mount Kilimanjaro, Africa's highest mountain, is in northeastern Tanzania. According to the 2022 national census, Tanzania has a population of nearly 62 million, making it the most populous country located entirely south of the equator.",
+        "description": "Tanzania, officially the United States of Tanzania, is a country in East Africa within the African Great Lakes region. It borders Uganda to the north; Kenya to the northeast; the Indian Ocean to the east; Mozambique and Malawi to the south; Zambia to the southwest; and Rwanda, Burundi, and the Democratic Republic of the Congo to the west. Mount Kilimanjaro, Africa's highest mountain, is in northeastern Tanzania. According to the 2022 national census, Tanzania has a population of nearly 62 million, making it the most populous country located entirely south of the equator.",
         "capital": [
             "Dodoma"
         ],
@@ -6204,7 +6301,7 @@
     },
     {
         "name": "Ukraine",
-        "description": "Ukraine is a country in Eastern Europe. It is the second-largest European country after Russia, which borders it to the east and northeast. It also borders Belarus to the north; Poland, Slovakia, and Hungary to the west; and Romania and Moldova to the southwest; with a coastline along the Black Sea and the Sea of Azov to the south and southeast. Kyiv is the nation's capital and largest city, followed by Kharkiv, Dnipro and Odesa. Ukraine's official language is Ukrainian.",
+        "description": "Ukraine is a country in Eastern Europe. It is the second-largest European country after Russia, which borders it to the east and northeast. It also borders Belarus to the north; Poland, Slovakia, and Hungary to the west; and Romania and Moldova to the southwest; with a coastline along the Black Sea and the Sea of Azov to the south and southeast. Kyiv is the nation's capital and largest city, followed by Kharkiv, Dnipro and Odesa. Ukraine's official language is Ukrainian; Russian is also widely spoken, especially in the east and south.",
         "capital": [
             "Kyiv"
         ],
@@ -6256,7 +6353,7 @@
     },
     {
         "name": "United Kingdom",
-        "description": "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain, is a country in Northwestern Europe, off the north-western coast of the continental mainland. It comprises England, Scotland, Wales, and Northern Ireland. It includes the island of Great Britain, the north-eastern part of the island of Ireland, and most of the smaller islands within the British Isles. Northern Ireland shares a land border with the Republic of Ireland; otherwise, the United Kingdom is surrounded by the Atlantic Ocean, the North Sea, the English Channel, the Celtic Sea and the Irish Sea. The total area of the United Kingdom is 93,628 square miles (242,495\u00a0km2), with an estimated 2023 population of over 68 million people.",
+        "description": "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain, is an island country in Northwestern Europe, off the north-western coast of the continental mainland. It comprises England, Scotland, Wales, and Northern Ireland. It includes the island of Great Britain, the north-eastern part of the island of Ireland, and most of the smaller islands within the British Isles. Northern Ireland shares a land border with the Republic of Ireland; otherwise, the United Kingdom is surrounded by the Atlantic Ocean, the North Sea, the English Channel, the Celtic Sea and the Irish Sea. The total area of the United Kingdom is 93,628 square miles (242,495\u00a0km2), with an estimated 2023 population of over 68 million people.",
         "capital": [
             "London"
         ],

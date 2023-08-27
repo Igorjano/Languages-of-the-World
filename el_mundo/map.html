@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_75a5c5e10b04b9e181b59c59bf73e04d {
+                #map_09e3231a351cec11beaae93cb55ff0c3 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,18 +39,18 @@
 <body>
     
     
-            <div class="folium-map" id="map_75a5c5e10b04b9e181b59c59bf73e04d" ></div>
+            <div class="folium-map" id="map_09e3231a351cec11beaae93cb55ff0c3" ></div>
         
 </body>
 <script>
     
     
-            var map_75a5c5e10b04b9e181b59c59bf73e04d = L.map(
-                "map_75a5c5e10b04b9e181b59c59bf73e04d",
+            var map_09e3231a351cec11beaae93cb55ff0c3 = L.map(
+                "map_09e3231a351cec11beaae93cb55ff0c3",
                 {
-                    center: [49.0, 32.0],
+                    center: [51.5074, -0.1278],
                     crs: L.CRS.EPSG3857,
-                    zoom: 5,
+                    zoom: 10,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -60,28 +60,28 @@
 
         
     
-            var tile_layer_7c3299921e959a784a381f092f36dbb9 = L.tileLayer(
-                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 6, "maxZoom": 6, "minZoom": 3, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_75a5c5e10b04b9e181b59c59bf73e04d);
+            var tile_layer_3590caf387e41661f27894e4bdd955b7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_09e3231a351cec11beaae93cb55ff0c3);
         
     
-            var marker_296f0fe83ecaf66a5ea12a0ba7581857 = L.marker(
-                [33.0, 65.0],
+            var marker_f34b66e4b106c1210e645a0063696a07 = L.marker(
+                [51.5074, -0.1278],
                 {}
-            ).addTo(map_75a5c5e10b04b9e181b59c59bf73e04d);
+            ).addTo(map_09e3231a351cec11beaae93cb55ff0c3);
         
     
-        var popup_0884b9bb96584fa22d3629b0a6bdf7c1 = L.popup({"maxWidth": "100%"});
+        var popup_78aa813d3f086f4a786e4b5b2a508c2e = L.popup({"maxWidth": 300});
 
         
             
-                var html_d1b73cfe7a3225e03c3bd1842ed71cd5 = $(`<div id="html_d1b73cfe7a3225e03c3bd1842ed71cd5" style="width: 100.0%; height: 100.0%;">Afganistan</div>`)[0];
-                popup_0884b9bb96584fa22d3629b0a6bdf7c1.setContent(html_d1b73cfe7a3225e03c3bd1842ed71cd5);
+                var html_b222177099f2ae810069bf24fe6b54d5 = $(`<div id="html_b222177099f2ae810069bf24fe6b54d5" style="width: 100.0%; height: 100.0%;"><b>Заголовок:</b> Это заголовок<br><i>Курсивный текст:</i> Это текст с курсивом<br><a href='https://www.example.com'>Ссылка</a></div>`)[0];
+                popup_78aa813d3f086f4a786e4b5b2a508c2e.setContent(html_b222177099f2ae810069bf24fe6b54d5);
             
         
 
-        marker_296f0fe83ecaf66a5ea12a0ba7581857.bindPopup(popup_0884b9bb96584fa22d3629b0a6bdf7c1)
+        marker_f34b66e4b106c1210e645a0063696a07.bindPopup(popup_78aa813d3f086f4a786e4b5b2a508c2e)
         ;
 
         
