@@ -65,66 +65,122 @@
           <div class="u-custom-menu u-nav-container">
             <ul class="u-custom-font u-font-open-sans u-nav u-unstyled u-nav-1">
 {#                <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="" style="padding: 10px 20px;">Home</a>#}
-                <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="http://127.0.0.1:8000/el_mundo/all_data/" style="padding: 10px 20px;">Countries Info</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="userstat.html" style="padding: 10px 20px;">User Statistics</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="http://127.0.0.1:8000/el_mundo/login/" style="padding: 10px 20px;">Log In</a>
-</li></ul>
+                <li class="u-nav-item"><a
+                        class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="http://127.0.0.1:8000/el_mundo/all_data/" style="padding: 10px 20px;">Countries Info</a>
+                </li>
+                <li class="u-nav-item"><a
+                        class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="http://127.0.0.1:8000/el_mundo/countries" style="padding: 10px 20px;">Search countries by
+                    language</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="u-nav-item"><a
+                        class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="#" style="padding: 10px 20px;">Hi, {{ user.username }}</a>
+                </li>
+                <li class="u-nav-item"><a
+                        class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="http://127.0.0.1:8000/el_mundo/logout/" style="padding: 10px 20px;">Log Out</a>
+                </li>
+                {% else %}
+                <li class="u-nav-item"><a
+                        class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="http://127.0.0.1:8000/el_mundo/login/" style="padding: 10px 20px;">Log In</a>
+                </li>
+                {% endif %}
+            </ul>
           </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-{#                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-{#                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/">Home</a>#}
-                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="http://127.0.0.1:8000/el_mundo/all_data">Countries Info</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="userstat.html">User Statistics</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="http://127.0.0.1:8000/el_mundo/login">Log In</a>
-</li></ul>
-              </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                    <div class="u-inner-container-layout u-sidenav-overflow">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                            {#                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/">Home</a>#}
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                      href="http://127.0.0.1:8000/el_mundo/all_data">Countries Info</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                      href="http://127.0.0.1:8000/el_mundo/countries">Search countries
+                                by language</a>
+                            </li>
+                            {% if user.is_authenticated %}
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                          href="#">Hi, {{ user.username }}</a>
+                                </li></ul>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                          href="http://127.0.0.1:8000/el_mundo/logout">Log Out</a>
+                                </li>
+                            {% else %}
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                          href="http://127.0.0.1:8000/el_mundo/login">Log Out</a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
             </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
         </nav>
-      </div></header>
-    <section class="u-clearfix u-section-1" id="sec-c79a" data-href="world_map.html#sec-984d">
+  </div>
+  </header>
+  <section class="u-clearfix u-section-1" id="sec-c79a">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h4 class="u-text u-text-1">What languages speak the World ?</h4>
-        <h5 class="u-text u-text-default u-text-2">Choose parameters for display countries</h5>
-        <img class="u-image u-image-1" src="{% static 'images/ModernicaLUG00172_3.jpg' %}" data-image-width="1000" data-image-height="1000">
-        <h3 class="u-text u-text-default u-text-3">Explore all map</h3>
-        <a href="world_map.html#sec-856f" class="u-border-none u-btn u-button-style u-custom-font u-font-georgia u-none u-btn-1"></a>
-        <a href="world_map.html#sec-984d" class="u-border-none u-btn u-button-style u-none u-btn-2"><span class="u-icon u-icon-1"><svg class="u-svg-content" viewBox="0 0 30.727 30.727" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0   l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"></path></svg></span>
-        </a>
-        <div class="u-form u-form-1">
-          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
-            <div class="u-form-group u-form-name u-label-none">
-              <label for="name-3b9a" class="u-label">Name</label>
-              <input type="text" placeholder="Enter your Name" id="name-3b9a" name="name" class="u-input u-input-rectangle" required="">
-            </div>
-            <div class="u-form-email u-form-group u-label-none">
-              <label for="email-3b9a" class="u-label">Email</label>
-              <input type="email" placeholder="Enter a valid email address" id="email-3b9a" name="email" class="u-input u-input-rectangle" required="">
-            </div>
-            <div class="u-align-center u-form-group u-form-submit">
-              <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
-            </div>
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
-            <input type="hidden" name="formServices" value="b67e897b-1f7b-3d48-c24a-53f97729cda3">
-          </form>
-        </div>
+          <h4 class="u-text u-text-1">What languages speak the World ?</h4>
+          <h5 class="u-text u-text-default u-text-2">  </h5>
+          <img class="u-image u-image-1" src="{% static 'images/ModernicaLUG00172_3.jpg' %}" data-image-width="1000"
+               data-image-height="1000">
+          <h3 class="u-text u-text-default u-text-3">Explore all map</h3>
+          <a href="world_map.html#sec-856f"
+             class="u-border-none u-btn u-button-style u-custom-font u-font-georgia u-none u-btn-1"></a>
+          <a href="world_map.html#sec-984d" class="u-border-none u-btn u-button-style u-none u-btn-2"><span
+                  class="u-icon u-icon-1"><svg class="u-svg-content" viewBox="0 0 30.727 30.727" x="0px" y="0px"
+                                               style="width: 1em; height: 1em;"><path
+                  d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0   l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"></path></svg></span>
+          </a>
+          {#        <div class="u-form u-form-1">#}
+          {##}
+          {#            <form method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;" data-services="">#}
+          {#                {% csrf_token %}#}
+          {#             {{ form.as_p }}#}
+          {#        <div class="u-form-group u-form-name u-block-5386-25">#}
+          {#          <label for="username-a30d" class="u-label u-block-5386-26">Language</label>#}
+          {#          <input type="text" placeholder="Enter your Username" id="username-a30d" name="username" class="u-grey-5 u-input u-input-rectangle u-block-5386-27" required="">#}
+          {#        </div>#}
+          {#        <div class="u-form-group u-form-password u-block-5386-28">#}
+
+          {#                <select id="languages" name="languages"></select>#}
+          {#          <label for="password-a30d" class="u-label u-block-5386-29">Currency</label>#}
+
+          {#          <input type="text" id="password-a30d" class="u-grey-5 u-input u-input-rectangle u-block-5386-30">#}
       </div>
-    </section>
-    <section class="folium-map" id="sec-984d" style="width: 100%; height: 655px;">
-      <div class="folium-map" id="map_46f116ca4b22451e0b134c7faa9ee417" ></div>
-    </section>
-    
-    
-    
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-2724"><div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-text-grey-5 u-icon-1"><img src="{% static 'images/149306-9b739806.png' %}" alt=""></span>
-        <a href="world_map.html#sec-c79a" class="u-border-none u-btn u-button-style u-hover-feature u-none u-btn-1"></a>
+      {#        <div class="u-form-checkbox u-form-group u-block-5386-31">#}
+      {#          <input type="checkbox" id="checkbox-a30d" name="remember" value="On" class="u-field-input">#}
+      {#          <label for="checkbox-a30d" class="u-block-5386-32 u-field-label" style="">Remember me</label>#}
+      {#        </div>#}
+      {#        <div class="u-align-center u-form-group u-form-submit u-block-5386-33">#}
+      {#          <a class="u-btn u-btn-submit u-button-style">Search</a>#}
+      {#          <input type="submit" value="submit" class="u-form-control-hidden">#}
+      {#                <input type="submit" value="submit" class="u-form-control-hidden">#}
+      {#        </div>#}
+      {#        <input type="hidden" value="" name="recaptchaResponse">#}
+
+
+      {#      </form>#}
+      {##}
+      {#        </div>#}
+      </div>
+  </section>
+  <section class="folium-map" id="sec-984d" style="width: 100%; height: 655px;">
+      <div class="folium-map" id="map_46f116ca4b22451e0b134c7faa9ee417"></div>
+  </section>
+
+
+  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-2724">
+      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-text-grey-5 u-icon-1"><img
+              src="{% static 'images/149306-9b739806.png' %}" alt=""></span>
+          <a href="world_map.html#sec-c79a"
+             class="u-border-none u-btn u-button-style u-hover-feature u-none u-btn-1"></a>
       </div></footer>
     <span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; right: 20px; bottom: 20px; padding: 20px; background-image: none;" class="u-back-to-top u-grey-10 u-icon u-icon-circle u-opacity u-opacity-85 u-text-black" data-href="#">
         <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
@@ -141,7 +197,7 @@
                     center: [49.0, 32.0],
                     crs: L.CRS.EPSG3857,
                     zoom: 5,
-                    zoomControl: true,
+                    zoomControl: false,
                     preferCanvas: false,
                 }
             );

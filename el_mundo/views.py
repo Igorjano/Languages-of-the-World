@@ -1,14 +1,15 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 from geojson import Feature, FeatureCollection
+from django.contrib.auth import authenticate, login, logout
 
 from el_mundo.models import *
+from el_mundo.forms import *
 
 
 
-
-def login(request):
-    return render(request, 'login.html')
+# def login(request):
+#     return render(request, 'login.html')
 
 
 def view_homepage(request):
@@ -28,32 +29,79 @@ def country_info(request, country_name):
     return render(request, 'country_info.html', context=context)
 
 
-def countries(request):
-    countries = Countries.objects.all()
-    count_countries = Countries.objects.count()
-    context = {'countries': countries,
-               'count_countries': count_countries}
-    return render(request, 'countries.html', context=context)
+def countries_form_view(request):
+    initial_value = Languages.objects.order_by('name').first()
+    form = LanguagesForm(initial={'languages': initial_value})
 
+    if request.method == 'POST':
+        form = LanguagesForm(request.POST)
+        if form.is_valid():
+            selected_language = form.cleaned_data['languages']
+            countires = Countries.objects.filter(languagesbycountries__language=selected_language)
+            context = {'countries': countires,
+                       'language': selected_language,
+                       'selected_language': selected_language}
+            return render(request, 'countries.html', context=context)
+        else:
+            form = LanguagesForm
+            context = {'form': form}
+            return render(request, 'countries.html',  context=context)
 
-def currency(request):
-    currency = Currency.objects.all()
-    context = {'currency': currency}
-    return render(request, 'currency.html', context=context)
-
-
-def languages(request):
-    languages = Languages.objects.all()
-    context = {'languages': languages}
-    return render(request, 'languages.html', context=context)
+    return render(request, 'countries.html', {'form': form})
 
 
 def all_data(request):
     countries = Countries.objects.all()
-    languages = Languages.objects.all()
-    currency = Currency.objects.all()
+    languages = Languages.objects.all().order_by('name')
+    currency = Currency.objects.all().order_by('name')
     context = {'countries': countries,
                'languages': languages,
                'currency': currency}
     return render(request, 'all_data.html', context=context)
+
+
+# def get_app_urls():
+#     urls = {}
+#     for view_name in get_resolver().reverse_dict.keys():
+#         if isinstance(view_name, str) and view_name.endswith('/'):
+#             reversed_val = reverse(view_name)
+#             key = reversed_val.split('/')[2]
+#             urls[key] = reversed_val
+#     return urls
+
+
+def sign_in(request):
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = authenticate(username=username, password=password)
+            if user:
+                login(request, user)
+                return redirect('home')
+
+    else:
+        form = LoginForm()
+    context = {'form': form}
+    return render(request, 'registration/login.html', context=context)
+
+
+def sign_out(request):
+    logout(request)
+    return redirect('home')
+
+
+def sign_up(request):
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect('home')
+
+    else:
+        form = RegisterForm()
+    context = {'form': form}
+    return render(request, 'registration/signup.html', context=context)
 

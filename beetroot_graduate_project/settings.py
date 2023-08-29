@@ -24,12 +24,13 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 config.read(os.path.join(BASE_DIR, 'project_properties'))
 postgres_config = config['postgres_conn']
+django_config = config['django']
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-km8uv64nkvz_yikh8_^nq8hao@gg4w@*1wps(z14e=53fq_l2)'
+SECRET_KEY = django_config['secret_key']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -141,3 +142,4 @@ STATICFILES_DIRS = [os.path.join(TEMPLATE_DIR, '../static')]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'

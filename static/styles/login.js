@@ -1,0 +1,1 @@
+{"title":"Login Template","customColors":[{"color":"#fffacd","status":0,"transparency":1,"index":0},{"color":"#fffee1","status":0,"transparency":1,"index":1}]}
