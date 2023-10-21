@@ -1,11 +1,11 @@
-# from el_mundo.models import *
+from el_mundo.models import *
 import json
 
 
-# Countries.objects.all().delete()
-# Currency.objects.all().delete()
-# Languages.objects.all().delete()
-# LanguagesByCountries.objects.all().delete()
+Countries.objects.all().delete()
+Currency.objects.all().delete()
+Languages.objects.all().delete()
+LanguagesByCountries.objects.all().delete()
 
 
 def fill_languages_by_countries(data):
@@ -111,14 +111,12 @@ file = 'fixtures/countries_data.json'
 with open(file, 'r', encoding='utf-8') as json_file:
     data = json.load(json_file)
 
-# currencies = prepare_data(data, 'currencies')
-# languages = prepare_data(data, 'languages')
+currencies = prepare_data(data, 'currencies')
+languages = prepare_data(data, 'languages')
 continents = prepare_data(data, 'continent')
-print(continents)
-# # print(currencies)
-# # print(languages)
-# fill_currency(currencies)
-# fill_languages(languages)
-# fill_countries(data)
-# fill_languages_by_countries(data)
+
+fill_currency(currencies)
+fill_languages(languages)
+fill_countries(data)
+fill_languages_by_countries(data)
 

@@ -30,8 +30,6 @@ for i in range(len(countries) - 1):
 
     print(lang_str)
 
-    if countries[i].name == 'Russia':
-        continue
     marker = folium.CircleMarker(location=(countries[i].lat, countries[i].long),
                                  color='#696969',
                                  fill_color='#006400',
