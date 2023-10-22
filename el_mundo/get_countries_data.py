@@ -8,8 +8,6 @@ import os
 def main():
     file_name = 'fixtures/countries_data_with_description.json'
     url = 'https://restcountries.com/v3.1/all'
-
-
     response = requests.get(url)
     data = response.json()
     os.makedirs('../static/images/flags', exist_ok=True)
@@ -22,7 +20,7 @@ def main():
             countries_data.append(future.result())
             print(f'{future.result()} was added')
             countries_data = sorted(countries_data, key=lambda name: name['name'])
-    #
+
         for country in countries_data:
             future = executor.submit(get_country_description, country['name'])
             country.update({'description': future.result()})
@@ -30,7 +28,6 @@ def main():
 
         for country in countries_data:
             executor.submit(get_country_flag, country['name'], country['flag'])
-
 
     with open(file_name, 'w') as json_file:
         json.dump(countries_data, json_file, indent=4)

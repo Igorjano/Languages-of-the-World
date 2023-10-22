@@ -18,7 +18,7 @@ def fill_languages_by_countries(data):
             for lang in language:
                 lang_name = Languages.objects.get(name=lang)
                 new_country = LanguagesByCountries(country_id=country_name.id,
-                                              language_id=lang_name.id)
+                                                   language_id=lang_name.id)
                 new_country.save()
                 print(f'{new_country} was saved')
         else:
@@ -27,7 +27,7 @@ def fill_languages_by_countries(data):
             lang_name = Languages.objects.get(name=lang)
             print(f'LANG NAME', lang_name)
             new_country = LanguagesByCountries(country_id=country_name.id,
-                                          language_id=lang_name.id)
+                                               language_id=lang_name.id)
             new_country.save()
             print(f'{new_country} was saved')
 

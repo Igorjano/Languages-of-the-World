@@ -7,11 +7,6 @@ from el_mundo.models import *
 from el_mundo.forms import *
 
 
-
-# def login(request):
-#     return render(request, 'login.html')
-
-
 def view_homepage(request):
     return render(request, 'world_map.html')
 
@@ -20,11 +15,9 @@ def country_info(request, country_name):
     country = Countries.objects.get(name=country_name)
     language = Languages.objects.filter(languagesbycountries__country=country)
     curr = country.currency
-    # currency_list = [cur.name for cur in currencies]
     languages_list = [lang.name for lang in language]
     context = {'country': country,
-               # 'currency_list': currency_list,
-                'curr': curr,
+               'curr': curr,
                'languages_list': languages_list}
     return render(request, 'country_info.html', context=context)
 
@@ -60,16 +53,6 @@ def all_data(request):
     return render(request, 'all_data.html', context=context)
 
 
-# def get_app_urls():
-#     urls = {}
-#     for view_name in get_resolver().reverse_dict.keys():
-#         if isinstance(view_name, str) and view_name.endswith('/'):
-#             reversed_val = reverse(view_name)
-#             key = reversed_val.split('/')[2]
-#             urls[key] = reversed_val
-#     return urls
-
-
 def sign_in(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
@@ -80,7 +63,6 @@ def sign_in(request):
             if user:
                 login(request, user)
                 return redirect('home')
-
     else:
         form = LoginForm()
     context = {'form': form}
@@ -99,7 +81,6 @@ def sign_up(request):
             user = form.save()
             login(request, user)
             return redirect('home')
-
     else:
         form = RegisterForm()
     context = {'form': form}

@@ -28,8 +28,6 @@ for i in range(len(countries) - 1):
                  f"<b>Language:<b><br>"\
                  f"{lang_str}"
 
-    print(lang_str)
-
     marker = folium.CircleMarker(location=(countries[i].lat, countries[i].long),
                                  color='#696969',
                                  fill_color='#006400',
