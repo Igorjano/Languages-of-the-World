@@ -20,7 +20,7 @@ config = configparser.ConfigParser()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 SETTINGS_DIR = Path(__file__).resolve().parent
-TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')git
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 config.read(os.path.join(BASE_DIR, 'project_properties'))
 postgres_config = config['postgres_conn']
