@@ -1,7 +1,6 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor
 import json
-import time
 import os
 
 
