@@ -1,7 +1,8 @@
-import requests
-from concurrent.futures import ThreadPoolExecutor
 import json
 import os
+from concurrent.futures import ThreadPoolExecutor
+
+import requests
 
 
 def main():

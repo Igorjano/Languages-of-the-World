@@ -1,10 +1,8 @@
-from django.shortcuts import render, redirect
-from django.http import HttpResponse, JsonResponse
-from geojson import Feature, FeatureCollection
 from django.contrib.auth import authenticate, login, logout
+from django.shortcuts import redirect, render
 
-from el_mundo.models import *
 from el_mundo.forms import *
+from el_mundo.models import *
 
 
 def view_homepage(request):

@@ -65,6 +65,7 @@ def fill_currency(data):
 
 
 def prepare_continent_data(country, area, continents):
+    print(country)
     if len(country[area]) > 1:
         country[area].split()
     if country[area] not in continents:
@@ -106,14 +107,14 @@ def prepare_data(data, area):
     return new_data
 
 
-file = 'fixtures/countries_data.json'
+file = 'el_mundo/fixtures/countries_data.json'
 
 with open(file, 'r', encoding='utf-8') as json_file:
     data = json.load(json_file)
 
 currencies = prepare_data(data, 'currencies')
 languages = prepare_data(data, 'languages')
-continents = prepare_data(data, 'continent')
+# continents = prepare_data(data, 'continent')
 
 fill_currency(currencies)
 fill_languages(languages)
