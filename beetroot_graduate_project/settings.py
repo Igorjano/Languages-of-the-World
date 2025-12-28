@@ -11,10 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import configparser
+from dotenv import load_dotenv
 import os
-
-config = configparser.ConfigParser()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -22,17 +20,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SETTINGS_DIR = Path(__file__).resolve().parent
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
-config.read(os.path.join(BASE_DIR, 'project_properties'))
-postgres_config = config['postgres_conn']
-django_config = config['django']
+load_dotenv(BASE_DIR / '.env')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = django_config['secret_key']
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DJANGO_DEBUG')
 
 ALLOWED_HOSTS = []
 
@@ -48,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'el_mundo'
-
 ]
 
 MIDDLEWARE = [
@@ -89,11 +84,11 @@ WSGI_APPLICATION = 'beetroot_graduate_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': postgres_config['name'],
-        'USER': postgres_config['user'],
-        'PASSWORD': postgres_config['password'],
-        'HOST': postgres_config['host'],
-        'PORT': postgres_config['port'],
+        'NAME': os.getenv('POSTGRES_DB'),
+        'USER': os.getenv('POSTGRES_USER'),
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
+        'HOST': os.getenv('POSTGRES_HOST'),
+        'PORT': os.getenv('POSTGRES_PORT'),
     }
 }
 
